@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Inventory Management System</h1>
+</header>
+
+<div class="container">
+    <form id="addProductForm">
+        <h2>Add New Product</h2>
+        <input type="text" id="productName" placeholder="Product Name" required>
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <input type="text" id="sku" placeholder="SKU" required>
+        <input type="number" id="price" placeholder="Price" required>
+        <input type="text" id="status" placeholder="Status" required>
+        <input type="number" id="amountNeeded" placeholder="Amount Needed" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Inventory List</h2>
+    <table id="inventoryTable">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>SKU</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Amount Needed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Inventory rows will go here -->
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2025 Inventory Management</p>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
